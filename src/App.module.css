@@ -1,0 +1,253 @@
+/* App.module.css */
+.App {
+  text-align: center;
+}
+
+.AppHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover,
+li.active a {
+  color: #008dda;
+}
+
+main {
+  /* Offset for the fixed header, adjust accordingly */
+  /* Enables scroll snapping */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Make sure the container fits the viewport height */
+  background-image: url("./assets/mainbcg.jpeg");
+  background-size: contain;
+  background-attachment: fixed; /* Keeps the background stationary */
+  background-position: center;
+  overflow-x: hidden;
+}
+
+section {
+  /* Applies to each section to ensure it snaps */
+  min-height: calc(
+    100vh - 60px
+  ); /* Adjust 60px if your header height is different */
+  padding-top: 60px;
+
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+/* Additional specific styles for sections */
+#section1 {
+  background-color: #faa;
+  display: flex;
+  flex-direction: column !important;
+}
+#section2 {
+  background-color: #afa;
+}
+#section3 {
+  background-color: #aaf;
+}
+#section4 {
+  background-color: #ffa;
+}
+
+/* .sectionWithBackground {
+  background-image: url("./assets/bcg3.jpg");
+  background-size: contain;
+  background-position: center;
+} */
+
+.circleText {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 2em; /* Adjust based on your needs */
+  white-space: nowrap;
+  /* You might need additional styling to shape the text into a semi-circle */
+}
+
+.subheading {
+  text-align: center;
+}
+
+.sectionOneContainer {
+  height: 90%;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-image: url("./assets/homebcg.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.sectionTwoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90%;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-image: url("./assets/gallerybcg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.sectionThreeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-image: url("./assets/homebcg.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  overflow: auto;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.sectionFourContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  background-image: url("./assets/homebcg.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  overflow: auto;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.imgContainer {
+  margin-top: 30px !important;
+  width: 350px;
+  height: 370px;
+  max-height: 370px;
+  margin: auto;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: black;
+  }
+}
+
+.modalContent {
+  width: 90%;
+  max-height: 80vh; /* Set maximum height of the modal content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Adjust padding as needed */
+  margin-top: 100px;
+  position: relative; /* Ensure positioning works correctly */
+}
+.modalHeader {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.galleryContent {
+  /* Add any additional styling for the gallery content */
+  padding-top: 100px;
+}
+
+.img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rowMain {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  width: 50%;
+  margin: 20px;
+}
+
+.mapContainer {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.heading {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.name {
+  font-family: "Amatic SC", sans-serif;
+  margin: 10px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.info {
+  font-family: "Amatic SC", sans-serif;
+  margin: 10px;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
