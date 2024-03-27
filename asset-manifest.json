@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/birthday/static/css/main.b930fcdf.css",
+    "main.js": "/birthday/static/js/main.dba888ad.js",
+    "static/media/twelve.jpeg": "/birthday/static/media/twelve.bdee38e03c5db7e24e33.jpeg",
+    "static/media/eleven.jpeg": "/birthday/static/media/eleven.97177250e3083be950c4.jpeg",
+    "static/media/ten.jpeg": "/birthday/static/media/ten.531a7210101f115d66f8.jpeg",
+    "static/media/two.jpeg": "/birthday/static/media/two.eea961f0b01138a89371.jpeg",
+    "static/media/six.jpeg": "/birthday/static/media/six.8d9c06ca3beb1dccfcfc.jpeg",
+    "static/media/eigth.jpeg": "/birthday/static/media/eigth.e90f81e4cbc079d8b655.jpeg",
+    "static/media/seven.jpeg": "/birthday/static/media/seven.6289bf665c4701ec3350.jpeg",
+    "static/media/five.jpeg": "/birthday/static/media/five.103bc5d5b3eda5ef8cde.jpeg",
+    "static/media/one.jpeg": "/birthday/static/media/one.ddf517b013b8a47536dc.jpeg",
+    "static/media/fourtneen.jpeg": "/birthday/static/media/fourtneen.f9fb1a51155546bd9426.jpeg",
+    "static/media/three.jpeg": "/birthday/static/media/three.1d0a22daac69758dcbb2.jpeg",
+    "static/media/galleryMainPage.jpeg": "/birthday/static/media/galleryMainPage.caa0da5e1a9abf44029e.jpeg",
+    "static/media/nine.jpeg": "/birthday/static/media/nine.2f7c7c31417bd19a421a.jpeg",
+    "static/media/thirteen.jpeg": "/birthday/static/media/thirteen.f8fa6ba237621265c662.jpeg",
+    "static/media/four.jpeg": "/birthday/static/media/four.d241e8ef47f86a593da2.jpeg",
+    "static/media/gallerybcg.jpeg": "/birthday/static/media/gallerybcg.4b0fc66bc5f061432d89.jpeg",
+    "static/media/mainbcg.jpeg": "/birthday/static/media/mainbcg.1b8ac1e91905e800219a.jpeg",
+    "static/media/homebcg.jpeg": "/birthday/static/media/homebcg.c1541d9a0063de8bfe43.jpeg",
+    "index.html": "/birthday/index.html",
+    "main.b930fcdf.css.map": "/birthday/static/css/main.b930fcdf.css.map",
+    "main.dba888ad.js.map": "/birthday/static/js/main.dba888ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b930fcdf.css",
+    "static/js/main.dba888ad.js"
+  ]
+}
