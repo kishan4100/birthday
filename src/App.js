@@ -142,7 +142,7 @@ function App() {
           className={styles.sectionWithBackground}
         >
           <div className={styles.sectionOneContainer}>
-            <div style={{ marginTop: "190px" }}>
+            <div style={{ marginTop: "50%" }}>
               <ReactCurvedText
                 width={450} // Increased width
                 height={180} // Increased height

@@ -55,7 +55,7 @@ section {
   min-height: calc(
     100vh - 60px
   ); /* Adjust 60px if your header height is different */
-  padding-top: 60px;
+  padding-top: 20px;
 
   scroll-snap-align: start;
   display: flex;
