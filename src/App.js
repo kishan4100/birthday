@@ -142,15 +142,15 @@ function App() {
           className={styles.sectionWithBackground}
         >
           <div className={styles.sectionOneContainer}>
-            <div style={{ marginTop: "50%" }}>
+            <div>
               <ReactCurvedText
-                width={450} // Increased width
-                height={180} // Increased height
+                width="350" // Increased width
+                height="auto" // Increased height
                 cx={180}
-                cy={200} // Center position adjusted if necessary
-                rx={150} // Adjusted radius
-                ry={100} // Adjusted radius
-                startOffset="4%" // Keep or adjust this value as needed
+                cy={250} // Center position adjusted if necessary
+                rx={180} // Adjusted radius
+                ry={180} // Adjusted radius
+                startOffset="10%" // Keep or adjust this value as needed
                 reversed={true}
                 text="Summer is Hot & Fun"
                 textProps={{
@@ -205,7 +205,7 @@ function App() {
         </section>
         <section id="section3" ref={addSectionRef}>
           <div className={styles.sectionThreeContainer}>
-            <p style={{ margin: "0", marginTop: "250px", fontSize: "2rem" }}>
+            <p style={{ margin: "0", marginTop: "35%", fontSize: "2rem" }}>
               See you soon..
             </p>
             <div className={styles.rowMain}>
@@ -264,7 +264,7 @@ function App() {
         </section>
         <section id="section4" ref={addSectionRef}>
           <div className={styles.sectionFourContainer}>
-            <p style={{ margin: "0", marginTop: "65%", fontSize: "2rem" }}>
+            <p style={{ margin: "0", marginTop: "55%", fontSize: "2rem" }}>
               Special thanks...
             </p>
             <div
