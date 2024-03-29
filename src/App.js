@@ -366,7 +366,7 @@ function App() {
               His Journey !!
             </h2>
             <IconButton onClick={toggleModal} className={styles.closeButton}>
-              <CloseIcon sx={{ color: "white" }} />
+              <CloseIcon sx={{ color: "#fff" }} />
             </IconButton>
           </div>
           <Grid container spacing={2} style={{ padding: 20 }}>
