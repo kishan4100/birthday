@@ -171,6 +171,7 @@ function App() {
                 fontFamily: "Great Vibes, cursive",
                 fontWeight: 400,
                 fontStyle: "normal",
+                marginBottom: "5px",
               }}
             >
               Summer is Hot & Fun
@@ -190,7 +191,12 @@ function App() {
             </p>
 
             <p className={styles.info}>Please join us to celebrate</p>
-            <p className={styles.name}>Ganan's 1st birthday</p>
+            <p
+              className={styles.name}
+              style={{ fontFamily: "Great Vibes, cursive" }}
+            >
+              Ganan's 1st birthday
+            </p>
           </div>
         </section>
         <section id="section2" ref={addSectionRef}>
