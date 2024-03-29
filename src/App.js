@@ -45,7 +45,9 @@ function App() {
   // Function to handle smooth scrolling
   const scrollToSection = (e) => {
     e.preventDefault();
-    const targetId = e.target.getAttribute("href").slice(1);
+    const hrefAttribute = e.target.getAttribute("href");
+    const targetId = hrefAttribute ? hrefAttribute.slice(1) : "section1";
+    console.log(targetId);
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
@@ -78,8 +80,39 @@ function App() {
                 color: "#F7EEDD",
               }}
             >
-              <a href="#section1" onClick={scrollToSection}>
-                Home
+              <a
+                href="#section1"
+                onClick={scrollToSection}
+                aria-label="svg icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0,0,256,256"
+                >
+                  <g
+                    fill="#ffffff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                  >
+                    <g transform="scale(10.66667,10.66667)">
+                      <path d="M12,2.09961l-11,9.90039h3v9h7v-6h2v6h7v-9h3zM12,4.79102l6,5.40039v0.80859v8h-3v-6h-6v6h-3v-8.80859z"></path>
+                    </g>
+                  </g>
+                </svg>
               </a>
             </li>
             <li
@@ -92,7 +125,7 @@ function App() {
               }}
             >
               <a href="#section2" onClick={scrollToSection}>
-                Photo Gallery
+                Gallery
               </a>
             </li>
             <li
@@ -118,7 +151,7 @@ function App() {
               }}
             >
               <a href="#section4" onClick={scrollToSection}>
-                Special Thanks
+                Credits
               </a>
             </li>
             <li
@@ -237,12 +270,19 @@ function App() {
         </section>
         <section id="section3" ref={addSectionRef}>
           <div className={styles.sectionThreeContainer}>
-            <p style={{ margin: "0", marginTop: "65%", fontSize: "2rem" }}>
+            <p
+              style={{
+                margin: "0",
+                marginTop: "70%",
+                fontSize: "2rem",
+                fontFamily: "Great Vibes, cursive",
+              }}
+            >
               See you soon..
             </p>
             <div className={styles.rowMain}>
               <div className={styles.rowContainer}>When</div>
-              <div className={styles.rowContainer}> On April 3rd 2024</div>
+              <div className={styles.rowContainer}>April 3rd 2024</div>
             </div>
             <div className={styles.rowMain}>
               <div className={styles.rowContainer}>Where</div>
@@ -251,7 +291,7 @@ function App() {
                   style={{ color: "#4682B4" }}
                   href="https://maps.app.goo.gl/RRe9G3mg52eLvMwTA?g_st=iw"
                 >
-                  At woodrose club,JP Nagar, Bangalore
+                  Woodrose club
                 </a>
               </div>
             </div>
@@ -269,7 +309,7 @@ function App() {
             </div> */}
             <div className={styles.rowMain}>
               <div className={styles.rowContainer}>How</div>
-              <div className={styles.rowContainer}>In Pallete colors</div>
+              <div className={styles.rowContainer}>In Pastel colors</div>
             </div>
             <div className={styles.rowMain} style={{ marginTop: "20px" }}>
               <div className={styles.rowContainer} style={{ flex: "1" }}>
@@ -285,10 +325,10 @@ function App() {
                     justifyContent: "flex-end",
                   }}
                 >
-                  <p style={{ margin: "0" }}>6:00 PM Start</p>
-                  <p style={{ margin: "0" }}>6:30 PM Fun Activities</p>
-                  <p style={{ margin: "0" }}>7:30 PM Cake Cutting</p>
-                  <p style={{ margin: "0" }}>8:15 PM Dinner</p>
+                  <p style={{ margin: "0" }}>6:00 pm Start</p>
+                  <p style={{ margin: "0" }}>6:30 pm Fun Activities</p>
+                  <p style={{ margin: "0" }}>7:30 pm Cake Cutting</p>
+                  <p style={{ margin: "0" }}>8:15 pm Dinner</p>
                 </div>
               </div>
             </div>
@@ -296,7 +336,15 @@ function App() {
         </section>
         <section id="section4" ref={addSectionRef}>
           <div className={styles.sectionFourContainer}>
-            <p style={{ margin: "0", marginTop: "70%", fontSize: "2rem" }}>
+            <p
+              style={{
+                margin: "0",
+                marginTop: "70%",
+                fontSize: "2rem",
+                fontFamily: "Great Vibes, cursive",
+                fontWeight: 500,
+              }}
+            >
               Special thanks...
             </p>
             <div
@@ -310,27 +358,25 @@ function App() {
               }}
             >
               <div style={{ marginBottom: "5px" }}>
-                Monika from Eventssy Decor{" "}
+                Monika from Eventssy Decor
               </div>
               <div style={{ marginBottom: "5px" }}>
                 Suresh from Woodrose Club
               </div>
-              <div style={{ marginBottom: "5px" }}>
-                Pavan from Art Focus (photography)
-              </div>
+              <div style={{ marginBottom: "5px" }}>Pavan from Art Focus</div>
               <div style={{ marginBottom: "5px" }}>
                 Divina from Divina-Bakery
               </div>
               <div style={{ marginBottom: "5px" }}>
-                Manasa from Manasa Gowda Fashion Statement
+                Manasa from Fashion Statement
               </div>
               <div style={{ marginBottom: "5px" }}>
                 Madhushree from Makeup-by-Madhushree
               </div>
               <div style={{ marginBottom: "5px" }}>
-                Little G's E-Team - Anirudh,Prerana
+                Little G's special team Anirudh,Prerana
               </div>
-              <div style={{ marginBottom: "5px" }}>E-invite - Kishan</div>
+              <div style={{ marginBottom: "5px" }}>E-invite from Kishan</div>
             </div>
             {/* <div>Contact :- sagar-9980981723, sowmya-9945461723</div> */}
             <div

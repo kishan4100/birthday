@@ -138,11 +138,9 @@ section {
   background-size: cover;
   background-position: center;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.4rem !important;
   overflow: auto;
-  font-family: "Amatic SC", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 900;
+  font-family: "Single Day";
 }
 .sectionFourContainer {
   display: flex;
