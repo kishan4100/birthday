@@ -152,7 +152,7 @@ function App() {
                 ry={180} // Adjusted radius
                 startOffset="10%" // Keep or adjust this value as needed
                 reversed={true}
-                text="Summer is Hot & Fun"
+                text=""
                 textProps={{
                   style: {
                     fontSize: "37px", // Consider adjusting if still out of bounds
@@ -164,6 +164,17 @@ function App() {
                 }}
               />
             </div>
+            <p
+              style={{
+                fontSize: "35px", // Consider adjusting if still out of bounds
+                letterSpacing: "1px",
+                fontFamily: "Great Vibes, cursive",
+                fontWeight: 400,
+                fontStyle: "normal",
+              }}
+            >
+              Summer is Hot & Fun
+            </p>
 
             <p className={styles.heading}>Our Little G is turning ONE !!!</p>
             <p
@@ -172,16 +183,14 @@ function App() {
                 marginTop: "20px",
                 fontFamily: "Great Vibes, cursive",
                 fontSize: "40px",
-                marginBottom: "40px",
+                marginBottom: "0px",
               }}
             >
               Birthday Party
             </p>
 
             <p className={styles.info}>Please join us to celebrate</p>
-            <p className={styles.name}>Ganan's first birthday</p>
-            <p className={styles.info}>April 3rd, 6:00 PM - 10:00 PM</p>
-            <p className={styles.info}>Woodrose, JP Nagar</p>
+            <p className={styles.name}>Ganan's 1st birthday</p>
           </div>
         </section>
         <section id="section2" ref={addSectionRef}>
@@ -357,7 +366,7 @@ function App() {
               His Journey !!
             </h2>
             <IconButton onClick={toggleModal} className={styles.closeButton}>
-              <CloseIcon sx={{ color: "white" }} />
+              <CloseIcon sx={{ color: "#fff" }} />
             </IconButton>
           </div>
           <Grid container spacing={2} style={{ padding: 20 }}>
