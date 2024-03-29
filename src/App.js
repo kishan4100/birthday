@@ -286,30 +286,28 @@ function App() {
             </div>
             <div className={styles.rowMain}>
               <div className={styles.rowContainer}>Where</div>
-              <div className={styles.rowContainer} style={{ width: "60%" }}>
+              <div className={styles.rowContainer}>
                 <a
                   style={{ color: "#4682B4" }}
                   href="https://maps.app.goo.gl/RRe9G3mg52eLvMwTA?g_st=iw"
                 >
+                  <svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
+                    <path d="M0 0h48v48h-48z" fill="none" />
+                  </svg>
                   Woodrose club
                 </a>
               </div>
             </div>
-            {/* <div className={styles.mapContainer}>
-              <iframe
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.156649175536!2d77.58332148287275!3d12.891434115169968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150d59b01dbf%3A0xe2928460fcdb5b64!2sWoodrose%20Club!5e0!3m2!1sen!2sin!4v1711426919172!5m2!1sen!2sin"
-                width="300"
-                height="400"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                style={{ border: "0" }}
-              ></iframe>
-            </div> */}
+
             <div className={styles.rowMain}>
               <div className={styles.rowContainer}>How</div>
-              <div className={styles.rowContainer}>In Pastel colors</div>
+              <div className={styles.rowContainer}>Pastel colors</div>
             </div>
             <div className={styles.rowMain} style={{ marginTop: "20px" }}>
               <div className={styles.rowContainer} style={{ flex: "1" }}>
