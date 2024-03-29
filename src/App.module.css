@@ -118,7 +118,7 @@ section {
 .sectionTwoContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 90%;
   width: 90%;
   background-color: #ffffff;
@@ -216,7 +216,6 @@ section {
 .rowMain {
   display: flex;
   width: 100%;
-  height: 50%;
 }
 
 .rowContainer {
