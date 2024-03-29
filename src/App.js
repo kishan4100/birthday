@@ -363,7 +363,7 @@ function App() {
         <div className={styles.modalContent}>
           <div className={styles.modalHeader}>
             <h2 id="gallery-modal-title" style={{ fontFamily: "Amatic SC" }}>
-              His Journey !!
+              His Journey !
             </h2>
             <IconButton onClick={toggleModal} className={styles.closeButton}>
               <CloseIcon sx={{ color: "#fff" }} />
